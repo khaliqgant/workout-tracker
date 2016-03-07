@@ -1,0 +1,31 @@
+{
+  "name": "workout-tracker",
+  "description": "",
+  "version": "",
+  "homepage": "",
+  "author": {
+    "name": "Khaliq Gant",
+    "email": "khaliqgant@gmail.com",
+    "url": "https://github.com/khaliqgant"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ""
+  },
+  "bin": {
+    "": ""
+  },
+  "dependencies": {
+    "json-editor": "^0.7.23"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "latest"
+  },
+  "keywords": [
+    ""
+  ]
+}
