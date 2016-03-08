@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$ref": "mens_health.json",
+    "title": "Total-Body Pull",
+    "source": "http://www.menshealth.com/fitness/saturday-workout-total-body",
+    "type": "object",
+    "required": [ "exercises" ],
+    "properties": {
+        "exercises": {
+            "type": "array"
+        }
+    }
+}
+
+

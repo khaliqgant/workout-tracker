@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "allOf": [
+    {
+      "$ref": "mens_health"
+    },
+    {
+      "properties": {
+        "exercises": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "enum": [
+                  "Barbel Pause Bench Press",
+                  "Tempo Pushup",
+                  "Dumbbell Single-Arm Overhead Press",
+                  "Bear Crawl"
+                ]
+              },
+              "weight": {
+                "type": "integer"
+              },
+              "reps": {
+                "type": "integer"
+              },
+              "time": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "weight",
+              "time",
+              "description"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

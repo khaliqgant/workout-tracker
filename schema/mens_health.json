@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "/mens_health.json",
+    "type": "object",
+    "required": [
+        "title",
+        "source",
+        "exercises"
+    ]
+}
