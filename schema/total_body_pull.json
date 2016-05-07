@@ -19,36 +19,119 @@
           "type": "array",
           "uniqueItems": true,
           "items": {
-            "type": "object",
-            "properties": {
-              "name": {
-                "type": "string",
-                "enum": [
-                  "Cliffhanger Challenge: Chinups and Hangs",
-                  "Foot-Elevated Single-Leg Hip Thrust",
-                  "Tempo Dumbbell Biceps Curl",
-                  "Dumbbell Farmer’s Walk"
-                  ]
+            "allOf": [
+              {
+                "type": "object",
+                "required": [
+                  "name",
+                  "weight",
+                  "time",
+                  "description",
+                  "notes"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "default": "Cliffhanger Challenge: Chinups and Hangs"
+                  },
+                  "weight": {
+                    "type": "integer"
+                  },
+                  "reps": {
+                    "type": "integer"
+                  },
+                  "time": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string",
+                    "default": "Find your half-max rep total. For instance, say you can do a max total of 10 chinups in a row before you can’t do anymore. That makes your half-max rep total 5 reps (10 divided by 2). If you can only do 5 total reps, your half-max total is 2 to 3. Perform your half-max rep total every minute on the minute for 10 minutes. If you complete the reps before the end of the minute, rest until the next minute begins.Hang block: You can perform this a couple of ways. Option A: Hang for as long as you can, resting only when needed. Continue for 10 minutes.Option B: Hang for 30 seconds, and then rest for 30 seconds. Repeat for 10 minutes total. Every week, add a second of work and remove a second of rest to these time periods."
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                }
               },
-              "weight": {
-                "type": "integer"
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "default": "Foot-Elevated Single-Leg Hip Thrust"
+                  },
+                  "weight": {
+                    "type": "integer"
+                  },
+                  "reps": {
+                    "type": "integer",
+                    "default": 10
+                  },
+                  "time": {
+                    "type": "string",
+                    "default": "10 minutes"
+                  },
+                  "description": {
+                    "type": "string",
+                    "default": "Do all 10 reps on your left leg, and then rest the remainder of the minute. When the next minute begins, switch sides and do all 10 reps on your right leg. Alternate sides every minute. "
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                }
               },
-              "reps": {
-                "type": "integer"
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "default": "Tempo Dumbbell Biceps Curl"
+                  },
+                  "weight": {
+                    "type": "integer"
+                  },
+                  "reps": {
+                    "type": "integer"
+                  },
+                  "time": {
+                    "type": "string",
+                    "default": "10 minutes"
+                  },
+                  "description": {
+                    "type": "string",
+                    "default": "Grab a pair of 10-to-15 pound dumbbells. Do 5 rounds of the exercise. Each round is one minute long followed by a one-minute rest (10 minutes total). Follow the prescribed tempo for each round below. Try to complete as many reps in a minute that the tempo will allow. Round 1: Eccentric (1-1-3)Lift for 1 second-pause for 1 second at the top-lower for 3 secondsRound 2: Isometric (1-3-1)Lift for 1 second-lower the weights until your elbows are bent at 90 degrees, and then pause for 3 seconds—lower the rest of the way for 1 secondRound 3: Concentric (3-1-1)Lift for 3 seconds-pause for 1 second at the top-lower for 1 secondRound 4: ContinuousLift for 2 seconds and lower for 2 seconds without pausing at the bottom or topRound 5: Max Iso Lift the weights until your elbows are bent to 90 degrees. Now hold this position for a minute or for as long as possible."
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                }
               },
-              "time": {
-                "type": "string"
-              },
-              "notes": {
-                "type": "string"
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "default": "Dumbbell Farmer’s Walk"
+                  },
+                  "weight": {
+                    "type": "integer"
+                  },
+                  "reps": {
+                    "type": "integer"
+                  },
+                  "time": {
+                    "type": "string",
+                    "default": "10 minutes"
+                  },
+                  "description": {
+                    "type": "string",
+                    "default": "Grab a pair of dumbbells that's about 25 percent of your body weight, and hold them at your sides. Walk for 10 minutes. You can perform this a few different ways:Option A: Walk for 10 minutes, only resting when needed.Option B: Walk with one dumbbell in your right hand for one minute. Switch hands, and walk for one minute. Alternate sides for 10 minutes straight. Option C: Perform 30 seconds of walking followed by 30 seconds of rest for 10 minutes straight."
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                }
               }
-            },
-            "required": [
-              "name",
-              "weight",
-              "time",
-              "notes"
-              ]
+            ]
           }
         }
       }
