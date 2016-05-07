@@ -1,7 +1,7 @@
 {
   "name": "workout-tracker",
-  "description": "",
-  "version": "",
+  "description": "A set of JSON schemas for workouts",
+  "version": "0.0.1",
   "homepage": "",
   "author": {
     "name": "Khaliq Gant",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/khaliqgant/workout-tracker"
   },
   "engines": {
     "node": ""
@@ -26,6 +26,8 @@
     "should": "latest"
   },
   "keywords": [
-    ""
+    "excercise",
+    "workouts",
+    "weight lifting"
   ]
 }
