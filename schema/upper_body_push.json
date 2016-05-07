@@ -1,8 +1,9 @@
 {
+  "title": "Upper Body Push",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "allOf": [
     {
-      "$ref": "mens_health.json"
+      "$ref": "/schema/mens_health.json"
     },
     {
       "properties": {
