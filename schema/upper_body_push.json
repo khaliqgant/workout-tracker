@@ -15,7 +15,7 @@
           "type": "string",
           "default": "http://www.menshealth.com/fitness/tuesday-workout-upper-body"
         },
-        "exercises": {
+        "workout": {
           "type": "array",
           "uniqueItems": true,
           "items": {

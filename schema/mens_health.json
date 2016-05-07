@@ -5,6 +5,6 @@
     "required": [
         "title",
         "source",
-        "exercises"
+        "workout"
     ]
 }
