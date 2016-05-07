@@ -17,124 +17,62 @@
         },
         "workout": {
           "type": "array",
-          "uniqueItems": true,
           "items": {
-            "allOf": [
-              {
-                "type": "object",
-                "required": [
-                  "name",
-                  "weight",
-                  "time",
-                  "description",
-                  "notes"
-                ],
-                "properties": {
-                  "name": {
+            "properties": {
+              "Exercise": {
+                "type": "string",
+                "oneOf": [
+                  {
                     "type": "string",
-                    "default": "Barbel Pause Bench Press"
+                    "enum": [
+                      "Barbel Pause Bench Press"
+                    ],
+                    "title": "Chest",
+                    "description": "Choose a load that you can press for about 6 to 8 repetitions max. Then perform 2 to 3 reps every minute on the minute (EMOM) for 20 minutes straight. If you complete the reps before the end of the minute, rest until the next minute begins. Once you can do 3 reps EMOM for 20 minutes straight, increase the load by 5 pounds or 5 percent."
                   },
-                  "weight": {
-                    "type": "integer"
+                  {
+                    "enum": [
+                      "Dumbbell Single-Arm Overhead Press"
+                    ],
+                    "title": "Shoulders",
+                    "description": "Grab a 20- to 25-pound dumbbell. Perform 10 reps EMOM for 10 minutes. Do all 10 reps on your left side, and then rest the remainder of the minute. When the next minute begins, switch arms and do all 10 reps on your right side. Alternate sides every minute.Once you can do 10 reps per side for 10 minutes straight, increase the load by 5 pounds."
                   },
-                  "reps": {
-                    "type": "integer",
-                    "default": 3
+                  {
+                    "enum": [
+                      "Tempo Pushup"
+                    ],
+                    "title": "Upper Body",
+                    "description": "Do 5 rounds of the pushup. Each round is one minute long followed by a one-minute rest (10 minutes total). Follow the prescribed tempo for each round below. Try to complete as many reps in a minute that the tempo will allow. Round 1: Eccentric (3-1-1)Lower for 3 seconds-pause for 1 second at the bottom-lift for 1 second. Round 2: Isometric (1-3-1). Lower for 1 second-pause for 3 seconds at the bottom-lift for 1 second. Round 3: Concentric (1-1-3). Lower for 1 second-pause for 1 second at the bottom-lift for 3 seconds. Round 4: Continuous Lower for 2 seconds and lift for 2 seconds without pausing at the bottom or top. Round 5: Max IsoLower down into the bottom of a pushup so your chest hovers just above the floor. Now hold this position for a minute or for as long as possible."
                   },
-                  "time": {
-                    "type": "string",
-                    "default": "20 minutes"
-                  },
-                  "description": {
-                    "type": "string",
-                    "default": "Choose a load that you can press for about 6 to 8 repetitions max. Then perform 2 to 3 reps every minute on the minute (EMOM) for 20 minutes straight. If you complete the reps before the end of the minute, rest until the next minute begins. Once you can do 3 reps EMOM for 20 minutes straight, increase the load by 5 pounds or 5 percent."
-                  },
-                  "notes": {
-                    "type": "string"
+                  {
+                    "enum": [
+                      "Bear Crawl (A)",
+                      "Bear Crawl (B)"
+                    ],
+                    "title": "Full Body",
+                    "description": "Do a bear crawl for 10 minutes. You can perform this a couple of different ways:Option A: Do it for 10 minutes straight, only resting when needed.Option B: Perform 30 seconds of work followed by 30 seconds of rest. Every week, add a second of work and remove a second of rest to these time periods."
                   }
-                }
+                ]
               },
-              {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string",
-                    "default": "Dumbbell Single-Arm Overhead Press"
-                  },
-                  "weight": {
-                    "type": "integer"
-                  },
-                  "reps": {
-                    "type": "integer",
-                    "default": 10
-                  },
-                  "time": {
-                    "type": "string",
-                    "default": "10 minutes"
-                  },
-                  "description": {
-                    "type": "string",
-                    "default": "Grab a 20- to 25-pound dumbbell. Perform 10 reps EMOM for 10 minutes. Do all 10 reps on your left side, and then rest the remainder of the minute. When the next minute begins, switch arms and do all 10 reps on your right side. Alternate sides every minute.Once you can do 10 reps per side for 10 minutes straight, increase the load by 5 pounds."
-                  },
-                  "notes": {
-                    "type": "string"
-                  }
-                }
+              "weight": {
+                "type": "integer",
+                "title": "Weight"
               },
-              {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string",
-                    "default": "Tempo Pushup"
-                  },
-                  "weight": {
-                    "type": "integer"
-                  },
-                  "reps": {
-                    "type": "integer",
-                    "default": 5
-                  },
-                  "time": {
-                    "type": "string",
-                    "default": "10 minutes"
-                  },
-                  "description": {
-                    "type": "string",
-                    "default": "Do 5 rounds of the pushup. Each round is one minute long followed by a one-minute rest (10 minutes total). Follow the prescribed tempo for each round below. Try to complete as many reps in a minute that the tempo will allow.Round 1: Eccentric (3-1-1)Lower for 3 seconds-pause for 1 second at the bottom-lift for 1 secondRound 2: Isometric (1-3-1)Lower for 1 second-pause for 3 seconds at the bottom-lift for 1 secondRound 3: Concentric (1-1-3)Lower for 1 second-pause for 1 second at the bottom-lift for 3 secondsRound 4: ContinuousLower for 2 seconds and lift for 2 seconds without pausing at the bottom or topRound 5: Max IsoLower down into the bottom of a pushup so your chest hovers just above the floor. Now hold this position for a minute or for as long as possible."
-                  },
-                  "notes": {
-                    "type": "string"
-                  }
-                }
+              "reps": {
+                "type": "integer",
+                "title": "Reps"
               },
-              {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string",
-                    "default": "Bear Crawl"
-                  },
-                  "weight": {
-                    "type": "integer"
-                  },
-                  "reps": {
-                    "type": "integer"
-                  },
-                  "time": {
-                    "type": "string",
-                    "default": "10 minutes"
-                  },
-                  "description": {
-                    "type": "string",
-                    "default": "Do a bear crawl for 10 minutes. You can perform this a couple of different ways:Option A: Do it for 10 minutes straight, only resting when needed.Option B: Perform 30 seconds of work followed by 30 seconds of rest. Every week, add a second of work and remove a second of rest to these time periods."
-                  },
-                  "notes": {
-                    "type": "string"
-                  }
-                }
+              "time": {
+                "type": "string",
+                "title": "Time",
+                "default": "10 minutes"
+              },
+              "notes": {
+                "type": "string",
+                "title": "Notes",
+                "description": "Any notes about the exercise"
               }
-            ]
+            }
           }
         }
       }
