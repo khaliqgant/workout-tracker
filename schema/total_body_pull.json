@@ -1,15 +1,57 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "$ref": "mens_health.json",
-    "title": "Total-Body Pull",
-    "source": "http://www.menshealth.com/fitness/saturday-workout-total-body",
-    "type": "object",
-    "required": [ "exercises" ],
-    "properties": {
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "allOf": [
+    {
+      "$ref": "mens_health.json"
+    },
+    {
+      "title": {
+        "type": "string",
+        "default": "Total-Body Pull"
+      },
+      "source": {
+        "type": "string",
+        "default": "http://www.menshealth.com/fitness/saturday-workout-total-body"
+      },
+      "properties": {
         "exercises": {
-            "type": "array"
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "enum": [
+                  "Cliffhanger Challenge: Chinups and Hangs",
+                  "Foot-Elevated Single-Leg Hip Thrust",
+                  "Tempo Dumbbell Biceps Curl",
+                  "Dumbbell Farmer’s Walk"
+                  ]
+              },
+              "weight": {
+                "type": "integer"
+              },
+              "reps": {
+                "type": "integer"
+              },
+              "time": {
+                "type": "string"
+              },
+              "notes": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "weight",
+              "time",
+              "notes"
+              ]
+          }
         }
+      }
     }
+  ]
 }
-
 

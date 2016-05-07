@@ -2,10 +2,18 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "allOf": [
     {
-      "$ref": "mens_health"
+      "$ref": "mens_health.json"
     },
     {
       "properties": {
+        "title": {
+          "type": "string",
+          "default": "Upper Body Push"
+        },
+        "source": {
+          "type": "string",
+          "default": "http://www.menshealth.com/fitness/tuesday-workout-upper-body"
+        },
         "exercises": {
           "type": "array",
           "uniqueItems": true,
@@ -16,8 +24,8 @@
                 "type": "string",
                 "enum": [
                   "Barbel Pause Bench Press",
-                  "Tempo Pushup",
                   "Dumbbell Single-Arm Overhead Press",
+                  "Tempo Pushup",
                   "Bear Crawl"
                 ]
               },
@@ -30,7 +38,7 @@
               "time": {
                 "type": "string"
               },
-              "description": {
+              "notes": {
                 "type": "string"
               }
             },
@@ -38,8 +46,8 @@
               "name",
               "weight",
               "time",
-              "description"
-            ]
+              "notes"
+              ]
           }
         }
       }
