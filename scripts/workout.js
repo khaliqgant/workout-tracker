@@ -1,9 +1,10 @@
 (function(){
     var el = document.getElementById('editor');
     var workout = location.origin + '/schema/' + getParameterByName('workout') + '.json';
+    var editor;
 
     var schema = callAjax(workout, function(schema) {
-        var editor = new JSONEditor(el, {
+        editor = new JSONEditor(el, {
             ajax: true,
             schema: JSON.parse(schema)
         });
