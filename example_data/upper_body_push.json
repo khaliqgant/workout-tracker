@@ -1,0 +1,34 @@
+{
+  "title": "Upper Body Push",
+  "source": "http://www.menshealth.com/fitness/tuesday-workout-upper-body",
+  "workout": [
+    {
+      "exercise": "Barbel Pause Bench Press",
+      "weight": 185,
+      "reps": 3,
+      "time": "10 minutes",
+      "notes": "Super tough!"
+    },
+    {
+      "exercise": "Dumbbell Single-Arm Overhead Press",
+      "weight": 25,
+      "reps": 10,
+      "time": "10 minutes",
+      "notes": "Feel the burnnnn!"
+    },
+    {
+      "exercise": "Tempo Pushup",
+      "weight": 0,
+      "reps": 0,
+      "time": "10 minutes",
+      "notes": "ouch!"
+    },
+    {
+      "exercise": "Bear Crawl (A)",
+      "weight": 0,
+      "reps": 0,
+      "time": "10 minutes",
+      "notes": "FML"
+    }
+  ]
+}
