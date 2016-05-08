@@ -12,7 +12,7 @@
 ## Proof Of Concept
 * A simple example can be seen in the `index.html`` file and the javascript 
 in `scripts/workout.js`
-* Start up a simple webserver using `python -m SimpleHTTPServer 8000`
+* Start up a simple webserver using `npm run dev` which calls `python -m SimpleHTTPServer 8000`
 * The workout that gets loaded in depends on the query string appended to the URL.
 For example `localhost:8000/?workout=upper_body_push` will load that schema
 and allow you to enter in data and when hitting submit, the JSON dump will be

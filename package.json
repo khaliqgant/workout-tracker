@@ -3,7 +3,8 @@
   "description": "A set of JSON schemas for workouts",
   "version": "1.0.2",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "dev": "python -m SimpleHTTPServer 8000"
   },
   "author": {
     "name": "Khaliq Gant",
