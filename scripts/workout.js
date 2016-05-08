@@ -1,6 +1,6 @@
 (function(){
     var el = document.getElementById('editor');
-    var workout = location.origin + '/schema/' + getParameterByName('workout') + '.json';
+    var workout = location.origin + '/workouts/' + getParameterByName('workout') + '.json';
     var editor;
 
     var schema = callAjax(workout, function(schema) {

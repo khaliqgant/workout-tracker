@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "allOf": [
     {
-      "$ref": "/schema/mens_health.json"
+      "$ref": "/base/mens_health.json"
     },
     {
       "properties": {
@@ -15,8 +15,12 @@
           "type": "string",
           "default": "http://www.menshealth.com/fitness/tuesday-workout-upper-body"
         },
+        "time": {
+          "type": "string"
+        },
         "workout": {
           "type": "array",
+          "uniqueItems": true,
           "items": {
             "properties": {
               "exercise": {

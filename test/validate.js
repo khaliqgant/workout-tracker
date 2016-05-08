@@ -24,7 +24,7 @@ describe('JSON schema tests', function() {
        'returning null', function(done) {
 
         var valid,
-            location = '../schema/',
+            location = '../workouts/',
             schemas = fs.readdirSync(location);
 
         schemas.forEach(function(file) {

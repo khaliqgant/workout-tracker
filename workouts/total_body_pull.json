@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "allOf": [
     {
-      "$ref": "/schema/mens_health.json"
+      "$ref": "/base/mens_health.json"
     },
     {
       "properties": {
@@ -14,6 +14,9 @@
         "source": {
           "type": "string",
           "default": "http://www.menshealth.com/fitness/saturday-workout-total-body"
+        },
+        "time": {
+          "type": "string"
         },
         "workout": {
           "type": "array",
