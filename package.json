@@ -1,8 +1,10 @@
 {
   "name": "workout-tracker",
   "description": "A set of JSON schemas for workouts",
-  "version": "0.0.1",
-  "homepage": "",
+  "version": "0.0.2",
+  "scripts": {
+    "test": "make test"
+  },
   "author": {
     "name": "Khaliq Gant",
     "email": "khaliqgant@gmail.com",
@@ -13,10 +15,7 @@
     "url": "https://github.com/khaliqgant/workout-tracker"
   },
   "engines": {
-    "node": ""
-  },
-  "bin": {
-    "": ""
+    "node": ">=0.8.0"
   },
   "dependencies": {
     "assert": "^1.3.0",
@@ -24,11 +23,10 @@
     "json-editor": "^0.7.23"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "latest"
+    "mocha": "*"
   },
   "keywords": [
-    "excercise",
+    "exercise",
     "workouts",
     "weight lifting"
   ]
