@@ -1,7 +1,7 @@
 [![NPM](https://nodei.co/npm/workout-tracker.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/workout-tracker/)
-[![Supported Nodejs Version](https://img.shields.io/badge/node-%3E%3D0.10-blue.svg)](https://www.npmjs.com/package/workout-tracker)
 
 [![Build Status](https://travis-ci.org/khaliqgant/workout-tracker.svg?branch=master)](https://travis-ci.org/khaliqgant/workout-tracker)
+[![Supported Nodejs Version](https://img.shields.io/badge/node-%3E%3D0.10-blue.svg)](https://www.npmjs.com/package/workout-tracker)
 
 # Workout Tracker
 > A collection of workout schemas. Allows you to track predefined workouts progress.
