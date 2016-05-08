@@ -1,7 +1,7 @@
 {
   "name": "workout-tracker",
   "description": "A set of JSON schemas for workouts",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "scripts": {
     "test": "make test",
     "dev": "python -m SimpleHTTPServer 8000"
