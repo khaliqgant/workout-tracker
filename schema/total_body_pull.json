@@ -20,7 +20,7 @@
           "uniqueItems": true,
           "items": {
             "properties": {
-              "Exercise": {
+              "exercise": {
                 "type": "string",
                 "oneOf": [
                   {

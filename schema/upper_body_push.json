@@ -19,7 +19,7 @@
           "type": "array",
           "items": {
             "properties": {
-              "Exercise": {
+              "exercise": {
                 "type": "string",
                 "oneOf": [
                   {
