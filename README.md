@@ -1,10 +1,22 @@
 # Workout Tracker
-> Track predefined workouts using JSON schema. Analysis on workout progressions.
+> A collection of workout schemas. Allows you to track predefined workouts progress.
 
-## Todo
-* Run validation via tests and not use the cli tool
-* Or maybe just spin up json editor to work with it
-* What language will this be in? Node.js I guess?
+## Example
+* TODO
+
+## Proof Of Concept
+* A simple example can be seen in the `index.html`` file and the javascript 
+in `scripts/workout.js`
+* Start up a simple webserver using `python -m SimpleHTTPServer 8000`
+* The workout that gets loaded in depends on the query string appended to the URL.
+For example `localhost:8000/?workout=upper_body_push` will load that schema
+and allow you to enter in data and when hitting submit, the JSON dump will be
+outputted to the console.
+
+## Development
+* Any JSON schema workouts are encouraged via pull requests!
+* Add a schema to the schema directory and ensure it is valid by running `make test`
+from the root.
 
 ## References
 * [Check Data Against Registered schema](http://jsonschemalint.com/draft4/#)
