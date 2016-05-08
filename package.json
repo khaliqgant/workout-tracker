@@ -19,6 +19,8 @@
     "": ""
   },
   "dependencies": {
+    "assert": "^1.3.0",
+    "is-my-json-valid": "^2.13.1",
     "json-editor": "^0.7.23"
   },
   "devDependencies": {
