@@ -1,1 +1,0 @@
-../node_modules/json-editor/jsoneditor.js
