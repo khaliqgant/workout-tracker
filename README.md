@@ -7,10 +7,10 @@
 > A collection of workout schemas. Allows you to track predefined workouts progress.
 
 ## Example
-* TODO
+* Can be seen [here](http://khaliqgant.github.io/workout-tracker/)
 
-## Proof Of Concept
-* A simple example can be seen in the `index.html`` file and the javascript 
+## Development Proof Of Concept
+* A development simple example can be seen in the `index.html`` file and the javascript
 in `scripts/workout.js`
 * Start up a simple webserver using `npm run dev` which calls `python -m SimpleHTTPServer 8000`
 * The workout that gets loaded in depends on the query string appended to the URL.
