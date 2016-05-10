@@ -1,16 +1,25 @@
 (function(){
     var el = document.getElementById('editor');
     var pathname = location.pathname !== '/' ? location.pathname : '';
+    var param = getParameterByName('workout');
     var workout = location.origin + pathname + '/workouts/' +
-                  getParameterByName('workout') + '.json';
+                  param + '.json';
     var editor;
 
-    var schema = callAjax(workout, function(schema) {
-        editor = new JSONEditor(el, {
-            ajax: true,
-            schema: JSON.parse(schema)
+    if (param !== null) {
+        document.getElementById('links').style.display = 'none';
+
+        var schema = callAjax(workout, function(schema) {
+            editor = new JSONEditor(el, {
+                ajax: true,
+                schema: JSON.parse(schema)
+            });
         });
-    });
+    } else {
+        // show links and hide submit
+        document.getElementById('submit').style.display = 'none';
+        document.getElementById('links').style.display = 'block';
+    }
 
     /**
      * Call Ajax
